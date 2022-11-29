@@ -13,6 +13,12 @@
 .features {
     display: flex;
     gap: 30px;
+
+    &.item {
+        flex-basis: calc((100% - 30px * 2) / 3);
+        border-bottom: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }
 
 .features-item {
@@ -39,11 +45,4 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-light-color);
-
-}
-
-.features .item {
-    flex-basis: calc((100% - 30px * 2) / 3);
-    border-bottom: 5px;
-    border-bottom-right-radius: 5px;
 }

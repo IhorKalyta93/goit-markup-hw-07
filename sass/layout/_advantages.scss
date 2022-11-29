@@ -1,10 +1,10 @@
 .advantages__list {
     display: flex;
     gap: 30px;
-}
 
-.advantages__list .item {
-    flex-basis: calc((100% - 30px * 3) / 4);
+    &.item {
+        flex-basis: calc((100% - 30px * 3) / 4);
+    }
 }
 
 .advantages__box {

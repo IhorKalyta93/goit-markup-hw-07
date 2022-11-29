@@ -14,11 +14,11 @@
     border: 1px solid;
     border-radius: 4px;
     outline: transparent;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .clients__icon {

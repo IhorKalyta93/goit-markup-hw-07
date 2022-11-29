@@ -2,6 +2,11 @@
     margin-left: auto;
 }
 
+.signup__form {
+    display: flex;
+    gap: 10px;
+}
+
 .signup__title {
     margin-bottom: 20px;
     color: var(--main-light-color);
@@ -31,24 +36,20 @@
     letter-spacing: 0.03em;
     color: var(--main-light-color);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.signup__input:focus {
-    border-color: var(--accent-color);
-}
-
-.signup__input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.signup__form {
-    display: flex;
-    gap: 10px;
-}
 
 .signup__button {
     display: flex;
@@ -56,9 +57,9 @@
     width: 200px;
     padding: 10px;
     align-items: center;
-}
 
-.signup__button:hover,
-.signup__button:focus {
-    background-color: var(--button-hover-color);
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
 }

@@ -26,6 +26,11 @@
     background-color: var(--main-light-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    &:hover .close-icon,
+    &:focus .close-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .close-icon {
@@ -33,10 +38,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:hover .close-icon,
-.close:focus .close-icon {
-    fill: var(--accent-color);
-}
 
 .modal__title {
     margin-bottom: 12px;
@@ -81,6 +82,14 @@
     letter-spacing: 0.01em;
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus+.icon-form {
+        fill: var(--accent-color);
+    }
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .icon-form {
@@ -93,14 +102,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus+.icon-form {
-    fill: var(--accent-color);
-}
 
-.form-input:focus,
-.form-textarea:focus {
-    border-color: var(--accent-color);
-}
 
 .form-textarea {
     resize: none;
@@ -116,14 +118,18 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-textarea::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--placeholder-color);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: var(--placeholder-color);
+    }
+
+    &:focus {
+        border-color: var(--accent-color)
+    }
 }
 
 .form__label-check {
@@ -140,6 +146,11 @@
 
 .form-input-check {
     appearance: none;
+
+    &:checked+.checkbox-icon {
+        background-color: var(--accent-color);
+        border: 2px solid transparent;
+    }
 }
 
 .checkbox-icon {
@@ -154,11 +165,6 @@
     border: 2px solid var(--text-color-dark);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input-check:checked+.checkbox-icon {
-    background-color: var(--accent-color);
-    border: 2px solid transparent;
 }
 
 .form-link {
@@ -176,9 +182,9 @@
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-modal:hover,
-.button-modal:focus {
-    background-color: var(--button-hover-color);
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
 }
