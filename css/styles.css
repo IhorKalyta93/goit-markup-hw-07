@@ -624,7 +624,7 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlaypf {
+.portfolio-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,16 +645,15 @@ ul {
     overflow: hidden;
 }
 
-.itempf:hover .overlaypf,
-.itempf:focus .overlaypf {
+.itempf:hover .portfolio-overlay,
+.itempf:focus .portfolio-overlay {
     transform: translate(0);
 }
 
-.overlaypf-text {
+.portfolio__overlay-text {
     font-size: 18px;
     line-height: 1.75;
     color: var(--main-light-color);
-
 }
 
 .features-item {
@@ -748,7 +747,7 @@ ul {
     fill: var(--accent-color);
 }
 
-.title-modal {
+.modal__title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -758,14 +757,14 @@ ul {
     color: rgba(33, 33, 33, 1);
 }
 
-.form-group-box {
+.modal__form-group-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     gap: 10px;
 }
 
-.form-group {
+.modal__form-group-item {
     position: relative;
 }
 
@@ -836,7 +835,7 @@ ul {
     color: var(--placeholder-color);
 }
 
-.form-label-check {
+.form__label-check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -897,7 +896,7 @@ ul {
     margin-left: auto;
 }
 
-.signup-title {
+.signup__title {
     margin-bottom: 20px;
     color: var(--main-light-color);
     font-weight: 700;
@@ -912,7 +911,7 @@ ul {
     fill: currentColor;
 }
 
-.signup-input {
+.signup__input {
     padding: 14px 16px;
     width: 358px;
     outline: none;
@@ -928,11 +927,11 @@ ul {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.signup-input:focus {
+.signup__input:focus {
     border-color: var(--accent-color);
 }
 
-.signup-input::placeholder {
+.signup__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -940,12 +939,12 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.signup-form {
+.signup__form {
     display: flex;
     gap: 10px;
 }
 
-.signup-button {
+.signup__button {
     display: flex;
     justify-content: center;
     width: 200px;
@@ -953,7 +952,7 @@ ul {
     align-items: center;
 }
 
-.signup-button:hover,
-.signup-button:focus {
+.signup__button:hover,
+.signup__button:focus {
     background-color: var(--button-hover-color);
 }
